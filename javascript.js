@@ -26,12 +26,12 @@ function show_area() {
 }
 
 function check_number() {
-    input_a = prompt("Input first number")
-    input_c = prompt("Input second number")
+    let input_a = prompt("Input first number")
+    let input_c = prompt("Input second number")
     let a = parseInt(input_a);
     let c = parseInt(input_c);
     let d = a % c
-    if (d == 0) {
+    if (d === 0) {
         alert("Reminder is " + d + " => " +  a + " is multiple of " + c)
     } else {
         alert("Reminder is " + d + " => " +  a + " is not multiple of " + c)
